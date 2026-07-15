@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    {% load static %}
+    <style>
+        /* =========================
+           Footer Styling
+           ========================= */
+
+footer{
+    width:100%;
+    background:#111827;
+    color:#ffffff;
+    text-align:center;
+    padding:20px 15px;
+    border-top:3px solid #00d4ff;
+}
+
+footer p{
+    margin:8px 0;
+    font-size:15px;
+    color:#d1d5db;
+    letter-spacing:0.5px;
+}
+
+footer p:first-child{
+    font-size:17px;
+    font-weight:bold;
+    color:#00d4ff;
+}
+
+footer p:last-child{
+    font-size:14px;
+    color:#9ca3af;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:768px){
+
+    footer{
+        padding:18px 10px;
+    }
+
+    footer p:first-child{
+        font-size:16px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+
+    footer p:last-child{
+        font-size:13px;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <footer>
+        <p>This Portfolio is created during practice</p>
+        <p>Create on 15 July 2026</p>
+        <p>&copy; {% now "Y" %} Himanshu Prajapati. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

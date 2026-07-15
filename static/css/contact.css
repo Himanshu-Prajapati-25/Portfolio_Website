@@ -1,0 +1,147 @@
+/* ==========================
+   Contact Details
+========================== */
+
+.contact-details{
+    max-width:900px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-details h1{
+    text-align:center;
+    font-size:2.5rem;
+    color:#00d4ff;
+    margin-bottom:30px;
+}
+
+.contact-details ul{
+    list-style:none;
+    padding:0;
+}
+
+.contact-details li{
+    background:#334155;
+    color:#ffffff;
+    margin:15px 0;
+    padding:18px;
+    border-left:5px solid #00d4ff;
+    border-radius:8px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.contact-details li:hover{
+    background:#475569;
+    transform:translateX(8px);
+}
+
+.contact-details a{
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-details a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   Contact Form
+========================== */
+
+section:last-of-type{
+    max-width:700px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+section:last-of-type div{
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+    color:#00d4ff;
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    color:white;
+    font-size:16px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:8px;
+    background:#334155;
+    color:white;
+    font-size:16px;
+    outline:none;
+}
+
+input::placeholder{
+    color:#b0b8c5;
+}
+
+input:focus{
+    border:2px solid #00d4ff;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#00d4ff;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#009fc2;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px){
+
+    .contact-details,
+    section:last-of-type{
+        width:90%;
+        padding:25px;
+    }
+
+    .contact-details h1{
+        font-size:2rem;
+    }
+
+    section:last-of-type div{
+        font-size:1.6rem;
+    }
+
+    input,
+    button{
+        font-size:15px;
+    }
+
+}

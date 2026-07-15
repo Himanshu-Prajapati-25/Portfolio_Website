@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+{% block content %}
+<section class="contact-details">
+    <h1>Contact Details</h1>
+    <ul>
+        <li>Phone No: 9936084538</li>
+        <li>Email: <a href="mailto:hp5122006@gmail.com">
+            hp5122006@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/iam.himanshu.0/?hl=en">Click me</a></li>
+        <li>Linkedin: <a href="https://www.linkedin.com/in/himanshuprajapati2025/">Click me</a></li>
+        <li>GitHub: <a href="https://github.com/Himanshu-Prajapati-25">Click me</a></li>
+    </ul>
+</section>
+<section>
+    <div>Fill form to contact me</div>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required><br>
+        
+        <label for="phone">Phone No</label>
+        <input type="tel" id="phone" placeholder="Enter phoneNo" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+<div class="photo">
+    <img src="{% static 'images/photo.png' %}" alt="Himanshu Prajapati">
+</div>
+<section class='hero'>
+        <h3>Hello, I'm Himanshu Prajapati</h3><br>
+        <h2>Aspiring to become Backend & AI Engineer</h2><br>
+        <p>I want to build scalable backend applications and AI-powered solutions.</p><br>
+        <p>
+            Passionate about building scalable backend systems,
+            AI-powered applications and solving real-world problems
+            through technology.
+        </p>
+</section>
+
+<section class='projects'>
+    <h2>Fetured Projects with StackVolt⚡</h2>
+    <div class='project-grid'>
+        <div class='project-card'>
+            <img src="{% static 'images/aitellion.png' %}" alt="Aitellion">
+            <h3>AITELLION</h3>
+        </div>
+
+        <div class='project-card'>
+            <img src="{% static 'images/agrosatintel.png' %}" alt="Agrosatintel">
+            <h3>AgroSat Intel</h3>
+        </div>
+    </div>
+</section>
+{% endblock  %}
