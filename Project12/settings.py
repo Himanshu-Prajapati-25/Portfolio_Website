@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-c%+o40j6$gkl=@*3jyso9lqgzyj_#d800@n(0_)xt3qc&y=_#!
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "Portfolio_Website.onrender.com"
+    "portfolio-website-rcwg.onrender.com"
 ]
 
 
@@ -44,14 +44,13 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Project12.urls'
